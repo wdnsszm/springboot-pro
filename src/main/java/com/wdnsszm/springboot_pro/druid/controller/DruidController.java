@@ -4,7 +4,6 @@ import com.wdnsszm.springboot_pro.druid.entity.City;
 import com.wdnsszm.springboot_pro.druid.service.DruidService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -18,7 +17,6 @@ public class DruidController {
 
     @RequestMapping("/druid")
     public List<City> findCityList(String param){
-        System.out.println("12122121");
         return druidService.findCityList();
     }
 
